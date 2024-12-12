@@ -66,19 +66,28 @@ namespace Day16___2
 
             ////심화과제3번
 
+           
+            Achievement achievement1 = new Achievement("초급 도전자", "점수 100점 달성", 100); ;
+            Achievement achievement2 = new Achievement("중급 도전자", "점수 500점 달성", 500); ;
+            Achievement achievement3 = new Achievement("고급 도전자", "점수 1000점 달성", 1000); ;
+            
+            achievement1.AddProgress(100);
+            achievement2.AddProgress(600);
+            achievement3.AddProgress(800);
 
+            achievement1.DisplayInfo();
+            Achievement.DisplaySummary();
+            Console.WriteLine();
 
+            achievement2.DisplayInfo();
+            Achievement.DisplaySummary();
+            Console.WriteLine();
 
-
-
-
-
+            achievement3.DisplayInfo();
+            Achievement.DisplaySummary();
+            Console.WriteLine();
 
         }
-
-       
-
-
 
     }
 }
